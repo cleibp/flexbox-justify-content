@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox | justify-content</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="item big">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item big">4</div>
+        <div class="item">5</div>
+      </div>
+      <div class="controls">
+        <input type="radio" name="justify-content" id="flex-start" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitJustifyContent = 'flex-start'; 
+                        container.style.justifyContent = 'flex-start'; 
+                        " checked>
+        <label for="flex-start">justify-content: flex-start;</label>
+        <br>
+        <input type="radio" name="justify-content" id="flex-end" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitJustifyContent = 'flex-end'; 
+                        container.style.justifyContent = 'flex-end'; 
+                        ">
+        <label for="flex-end">justify-content: flex-end;</label>
+        <br>
+        <input type="radio" name="justify-content" id="center" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitJustifyContent = 'center'; 
+                        container.style.justifyContent = 'center'; 
+                        ">
+        <label for="center">justify-content: center;</label>
+        <br>
+        <input type="radio" name="justify-content" id="space-between" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitJustifyContent = 'space-between';
+                        container.style.justifyContent = 'space-between';
+                        ">
+        <label for="space-between">justify-content: space-between;</label>
+        <br>
+        <input type="radio" name="justify-content" id="space-around" 
+               onclick="
+                        var container=document.getElementById('container'); 
+                        container.style.WebkitJustifyContent = 'space-around'; 
+                        container.style.justifyContent = 'space-around'; 
+                        ">
+        <label for="space-around">justify-content: space-around;</label>
+      </div>
+</body>
+</html>
